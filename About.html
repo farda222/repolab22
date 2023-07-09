@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="cursor-none overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything About Me</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="shortcut icon" type="x-icon" href="Asset/logo.png" />
+    <style>
+      .cursor {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        mix-blend-mode: difference;
+        background: #fff;
+        z-index: 999;
+      }
+      a:hover,
+      button:hover {
+        cursor: none;
+      }
+      *::selection {
+        background: #fff;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-950 cursor-none overflow-x-hidden overflow-y-hidden">
+    <div class="cursor hidden sm:hidden md:hidden lg:block 2xl:block"></div>
+    <nav class="flex items-center justify-between bg-bg py-4 px-8">
+      <div class="flex items-center">
+        <img src="Asset/logo.png" alt="Logo" class="h-8 w-8 md:h-12 md:w-12 lg:-mt-2" />
+      </div>
+      <div class="flex justify-center md:justify-start lg:justify-center lg:items-center lg:ml-40 sm:justify-start">
+        <ul class="flex space-x-5 md:space-x-20 lg:space-x-24 sm:space-x-20">
+          <li><a href="index.html" class="text-white hover:text-gray-700 md:text-lg">Home</a></li>
+          <li><a href="#" class="text-white hover:text-gray-700 md:text-lg">About</a></li>
+          <li><a href="project.html" class="text-white hover:text-gray-700 md:text-lg">Project</a></li>
+          <li><a href="Article.html" class="text-white hover:text-gray-700 md:text-lg">Article</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:block sm:block">
+        <a class="bg-neutral-800 hover:bg-white text-white font-bold py-2 px-4 rounded active:bg-white active:text-black transition-all md:px-8 md:py-4 hover:text-black">Get in Touch</a>
+      </div>
+    </nav>
+    <div
+      class="justify-center items-center container mx-auto flex mt-28 w-96 h-5 ml-5 z-0 sm:w-full sm:-ml-5 sm:mt-48 md:ml-12 lg:justify-center lg:items-center lg:mx-[5.7rem] lg:flex lg:mt-11 2xl:mx-[21rem] 2xl:items-center 2xl:align-middle 2xl:flex 2xl:justify-center">
+      <h1 class="text-white -ml-24 opacity-30 text-3xl w-[17rem] z-0 flex sm:ml-10 sm:w-[35rem] sm:text-6xl sm:mt-10 md:w-full md:text-7xl md:mt-28 lg:mt-56 lg:w-full">Farda Syarif As Fullstack Developer</h1>
+    </div>
+    <div class="container mt-[18rem] justify-center align-middle items-center flex sm:justify-center sm:align-middle sm:items-center sm:flex sm:mt-[31rem] md:mt-[32rem] lg:mt-[21rem] lg:mx-auto 2xl:mt-[29rem] 2xl:mx-auto">
+      <img class="z-10 flex absolute w-full sm:w-full md:w-[40rem] lg:w-[25rem] 2xl:w-[37rem]" src="Asset/Image.png" />
+    </div>
+    <div class="container -ml-14 -mt-16 absolute flex float-right sm:-mt-20 sm:-ml-1 2xl:ml-[32rem] 2xl:-mt-60">
+      <img class="z-10 absolute mx-20 sm:z-0 2xl:w-40 2xl:z-40 2xl:absolute" src="Asset/Dots.png" />
+    </div>
+    <div class="float-right -mt-32 mr-5 lg:mt-28 2xl:mr-[30rem] 2xl:mt-56">
+      <img class="sm:z-40 sm:absolute sm:-ml-60 sm:-mt-60 md:-mt-96 md:-ml-72 2xl:z-0 2xl:absolute" src="Asset/Dots2.png" />
+    </div>
+    <div class="container mx-auto justify-center align-middle items-center flex">
+      <p
+        class="text-white opacity-60 mt-[9rem] z-40 absolute text-xl w-80 text-center sm:text-3xl sm:w-[35rem] sm:mx-[6.7rem] sm:mt-[28rem] md:text-4xl md:w-[40rem] md:mx-auto md:justify-center md:flex md:mt-[34rem] lg:text-3xl lg:w-[45rem] lg:mx-[19.4rem] lg:mt-24 lg:justify-center lg:align-middle lg:items-center lg:flex 2xl:mx-[43rem] 2xl:w-[35rem] 2xl:mt-44">
+        My name farda syarif mubaro,im a student in smkn 8 my dream is become to be a software engineer or web developer and cyber security,or business man.
+      </p>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+      });
+    </script>
+  </body>
+</html>
